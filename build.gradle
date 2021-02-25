@@ -4,6 +4,7 @@ buildscript {
     repositories {
         google()
         jcenter()
+        maven { url 'https://dl.bintray.com/kotlin/kotlin-eap' }
     }
     dependencies {
         classpath "com.android.tools.build:gradle:4.1.2"
@@ -14,10 +15,21 @@ buildscript {
     }
 }
 
+ext {
+    retrofit_version = '2.4.0'
+    rxjava2_version = '2.1.14'
+    rxandroid_version = '2.0.2'
+    dagger2_version = '2.16'
+    support_version = '27.1.1'
+    picasso_version = '2.71828'
+    tedpermission_version = '2.2.0'
+}
+
 allprojects {
     repositories {
         google()
         jcenter()
+        maven { url 'https://dl.bintray.com/kotlin/kotlin-eap' }
     }
 }
 

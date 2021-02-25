@@ -1,6 +1,8 @@
 plugins {
     id 'com.android.application'
     id 'kotlin-android'
+    id 'kotlin-android-extensions'
+    id 'kotlin-kapt'
 }
 
 android {
@@ -42,4 +44,50 @@ dependencies {
     testImplementation 'junit:junit:4.+'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+
+    // Multidex
+    implementation 'com.android.support:multidex:1.0.3'
+
+    // Picasso
+    implementation "com.squareup.picasso:picasso:$picasso_version"
+
+    // Ted Permission
+    implementation "gun0912.ted:tedpermission-rx2:$tedpermission_version"
+
+    //googlePlay
+    implementation 'com.google.android.gms:play-services:12.0.1'
+
+    // Kotlin Support
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+
+    // Retrofit
+    implementation "com.squareup.retrofit2:retrofit:$retrofit_version"
+    implementation "com.squareup.retrofit2:converter-gson:$retrofit_version"
+    implementation "com.squareup.retrofit2:adapter-rxjava2:$retrofit_version"
+
+    // RxJava
+    implementation "io.reactivex.rxjava2:rxjava:$rxjava2_version"
+    implementation "io.reactivex.rxjava2:rxandroid:$rxandroid_version"
+
+    // Dagger
+    implementation "com.google.dagger:dagger:$dagger2_version"
+    implementation "com.google.dagger:dagger-android:$dagger2_version"
+    implementation "com.google.dagger:dagger-android-support:$dagger2_version"
+    kapt "com.google.dagger:dagger-compiler:$dagger2_version"
+    kapt "com.google.dagger:dagger-android-processor:$dagger2_version"
+
+    //Zing QrScanner
+    implementation 'com.journeyapps:zxing-android-embedded:3.2.0@aar'
+    implementation 'com.google.zxing:core:3.2.1'
+    implementation 'com.journeyapps:zxing-android-embedded:3.6.0'
+
+    //expendable list
+    implementation 'com.alespero:expandable-cardview:0.6'
+
+    implementation 'com.mindorks:paracamera:0.2.2'
+
+    //permission
+    implementation 'pub.devrel:easypermissions:2.0.1'
+
+    implementation 'com.xwray:groupie:2.1.0'
 }
