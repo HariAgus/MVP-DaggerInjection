@@ -1,7 +1,8 @@
-package com.hariagus.mvp
+package com.hariagus.mvp.ui.main
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.hariagus.mvp.R
 
 class MainActivity : AppCompatActivity() {
 
