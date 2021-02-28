@@ -1,7 +1,7 @@
 package com.hariagus.mvp.ui.main
 
 import com.hariagus.mvp.models.PhotosResponse
-import com.hariagus.mvp.ui.base.BaseContract
+import com.hariagus.mvp.base.BaseContract
 
 class MainContract {
 

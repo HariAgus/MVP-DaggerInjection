@@ -3,7 +3,6 @@ package com.hariagus.mvp.api
 import com.google.gson.GsonBuilder
 import com.hariagus.mvp.models.PhotosResponse
 import com.hariagus.mvp.util.Constants.BASE_URL
-import com.hariagus.mvp.util.DateType
 import io.reactivex.Observable
 import okhttp3.OkHttpClient
 import retrofit2.Retrofit

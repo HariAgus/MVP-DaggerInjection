@@ -1,4 +1,4 @@
-package com.hariagus.mvp.ui.base
+package com.hariagus.mvp.base
 
 class BaseContract {
 
