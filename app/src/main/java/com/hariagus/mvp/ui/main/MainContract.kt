@@ -4,13 +4,12 @@ import com.hariagus.mvp.ui.base.BaseContract
 
 class MainContract {
 
-//    interface View: BaseContract.View {
-//        fun onDomainSuccess(movie: List<Movie>)
-//        fun onDomainError(message: String)
-//    }
-//
-//    interface Presenter: BaseContract.Presenter<View> {
-//        fun getMovie()
-//    }
+    interface View: BaseContract.View {
+
+    }
+
+    interface Presenter: BaseContract.Presenter<View> {
+
+    }
 
 }
