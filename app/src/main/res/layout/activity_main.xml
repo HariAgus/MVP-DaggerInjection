@@ -6,6 +6,25 @@
     android:layout_height="match_parent"
     tools:context=".ui.main.MainActivity">
 
+    <Button
+        android:id="@+id/btnRequest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/search"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="@id/edIdAlbum"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/edIdAlbum"
+        app:layout_constraintTop_toTopOf="@id/edIdAlbum" />
 
+    <EditText
+        android:id="@+id/edIdAlbum"
+        android:layout_width="275dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:hint="Search Id albumm..."
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
