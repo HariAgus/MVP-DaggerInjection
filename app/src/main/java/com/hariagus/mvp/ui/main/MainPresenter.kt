@@ -35,6 +35,6 @@ class MainPresenter : MainContract.Presenter {
     }
 
     override fun attach(view: MainContract.View) {
-        this.view
+        this.view = view
     }
 }

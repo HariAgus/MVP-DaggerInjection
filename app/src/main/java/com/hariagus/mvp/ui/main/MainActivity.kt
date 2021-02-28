@@ -9,6 +9,7 @@ import com.hariagus.mvp.di.module.ActivityModule
 import com.hariagus.mvp.models.PhotosResponse
 import dagger.android.DaggerActivity
 import kotlinx.android.synthetic.*
+import kotlinx.android.synthetic.main.activity_main.*
 import javax.inject.Inject
 
 class MainActivity : AppCompatActivity(), MainContract.View {
@@ -25,6 +26,15 @@ class MainActivity : AppCompatActivity(), MainContract.View {
          */
         injectDependency()
         presenter.attach(this)
+
+        initView()
+    }
+
+    private fun initView() {
+         btnRequest.setOnClickListener {
+             val number = edIdAlbum.text.toString().toInt()
+             presenter.getPhotos(number)
+         }
     }
 
     override fun onSuccess(data: List<PhotosResponse>) {
